@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <script  src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+    <style>
+      body{
+        font-family: '微軟正黑體' !important;
+      }
+      label{
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <h1 align="center" ><br /><strong>以無線網路技術控制宿舍設備</strong></h1>
+   <form action="update.php" method="post">
+    <fieldset class="form-group">
+    <label for="name">姓名 name</label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="姓名 name" required="required">
+    </fieldset>
+
+    <fieldset class="form-group">
+    <label class="c-input c-radio">
+    <input id="radio1" name="sex" type="radio" value="MAN" required="required">
+    <span class="c-indicator"></span>
+    男 MAN   
+    </label>
+    <label class="c-input c-radio">
+    <input id="radio2" name="sex" type="radio" value="WOMAN" required="required">
+    <span class="c-indicator"></span>
+    女 WOMAN
+    </label>
+    </fieldset>
+
+    <fieldset class="form-group">
+    <label for="account">帳號 account</label>
+    <input type="text" class="form-control" id="account" name="account" placeholder="帳號 account" required="required">
+    </fieldset>
+     <fieldset class="form-group">
+    <label for="password">密碼 Password</label>
+    <input type="password" class="form-control" id="password" name="password" placeholder="密碼 Password" required="required">
+    </fieldset>
+    <fieldset class="form-group">
+    <label for="ckpassword">確認密碼 Check_Password</label>
+    <input type="password" class="form-control" id="ckpassword" name="ckpassword" placeholder=確認密碼 Check_Password" required="required"> 
+    <small class="text-muted">請再輸入一次密碼</small>
+    </fieldset>
+    <fieldset class="form-group">
+    <label for="email">電子郵件 Email</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="電子郵件 Email" required="required">
+    <small class="text-muted"></small>
+    </fieldset>
+  
+    <fieldset class="form-group">
+    <label for="phone">手機 Phone</label>
+    <input type="text" class="form-control" id="phone"  name="phone" placeholder="手機 Phone" required="required">
+    </fieldset>
+    <fieldset class="form-group">
+    <label for="room">房號 room</label>
+    <input type="text" class="form-control" id="room" name="room" placeholder="房號 room" required="required">
+    </fieldset>
+
+
+    <div align="right"><button  type="submit" class="btn btn-primary ">Submit</button></div>
+    </form>
+ 
+    </div>
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+  </body>
+</html>
